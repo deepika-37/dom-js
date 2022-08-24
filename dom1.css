@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.child{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: pink;
+    margin: 10px;
+}
+
+#clock{
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(109, 16, 170);
+    font-size: 40px;
+    text-align: center;
+    color: rgb(226, 176, 39);
+    border: 2px solid black;
+}

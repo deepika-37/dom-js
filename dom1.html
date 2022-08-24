@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="text">My ID name is text</div>
+    <h1>Im deepika</h1>
+    <div class="box">Im a div my class ID is box</div>
+    <h1 class="change">Hello</h1>
+    <button onclick="changeMe()">Click Me</button>
+    <div class="container">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+    <button onclick="direction()">Change Flex direction</button>
+    <h1 id="heading"> My Friends</h1>
+    <p>MyFriends</p>
+    <button onclick="changeText()">Replace Text</button>
+    <div id="clock"></div> <br> <br>
+    <div class="dropdown">
+
+        <label for="year">Year</label>
+        <select name="" onchange="yearChange()" id="yearSelect">
+            <option value="2015-2016">2015-2016</option>
+            <option value="2016-2017">2016-2017</option>
+            <option value="2017-2018">2017-2018</option>
+            <option value="2018-2019">2018-2019</option>
+            <option value="2019-2020">2019-2020</option>
+            <option value="2020-2021">2020-2021</option>
+            <option value="2021-2022">2021-2022</option>
+        </select>
+        <p>The Selected Year is :<span id="year"></span></p>
+    </div>
+
+    <br>
+    <h2>Form:</h2>
+    <form action="" class="form">
+        <label for="name">Name:</label>
+        <input required type="text" name="name" id="name"><br><br>
+        <label for="email">Email:</label>
+        <input required oninput="emailCheck()" type="email" name="email" id="email">
+        <span id="emailcheck" class="check"></span><br><br>
+        <label for="phoneno">Phone No:</label>
+        <input required oninput="numberCheck()" type="number" name="phoneno" id="phoneno">
+        <span class="check" id="digitcheck"></span>
+        <span class="check" id="startcheck"></span><br><br>
+        <label for="byear">Birth Year:</label>
+        <input required oninput="bYearCheck()" type="number" name="byear" id="byear">
+        <span class="check" id="byearcheck"></span><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+<script src="./dom1.js"></script>
+</html>
